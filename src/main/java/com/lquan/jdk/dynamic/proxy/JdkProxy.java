@@ -14,6 +14,9 @@ public class JdkProxy implements InvocationHandler {
 
 	@Override
 	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+		//UserManager user = (UserManager)proxy;
+		System.out.println((String)args[0]+"***************************"+ (String)args[1]);
+		//user.addUser((String)args[0], (String)args[1]);
 		// TODO Auto-generated method stub
 		// 调用invoke方法，result存储该方法的返回值
 		Object result = method.invoke(targetObject, args);
