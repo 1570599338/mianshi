@@ -1,5 +1,7 @@
 package com.lquan.jdk.singelton;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicStampedReference;
 import java.util.concurrent.locks.AbstractQueuedSynchronizer;
@@ -12,6 +14,7 @@ public class TestSingleton {
 		
 		AtomicInteger a = new AtomicInteger(0);
 		a.incrementAndGet();
+		//a.
 		
 		AtomicStampedReference  aa = new AtomicStampedReference(100, 1);
 		System.out.println(aa.compareAndSet(100, 100, aa.getStamp(), aa.getStamp()));
@@ -20,7 +23,11 @@ public class TestSingleton {
 		
 		
 		// ================== AQS =================
-		AbstractQueuedSynchronizer
+		//AbstractQueuedSynchronizer
+		ExecutorService aase =Executors.newFixedThreadPool(5);
+		aase.shutdown();
+		
+		Executors.newCachedThreadPool();
 
 	}
 
