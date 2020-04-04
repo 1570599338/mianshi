@@ -28,6 +28,9 @@ public class TestSingleton {
 		aase.shutdown();
 		
 		Executors.newCachedThreadPool();
+		
+		
+		Integer.SIZE
 
 	}
 
