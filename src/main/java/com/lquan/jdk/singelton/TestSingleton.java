@@ -26,11 +26,12 @@ public class TestSingleton {
 		//AbstractQueuedSynchronizer
 		ExecutorService aase =Executors.newFixedThreadPool(5);
 		aase.shutdown();
+		aase.execute(null);
 		
 		Executors.newCachedThreadPool();
 		
 		
-		Integer.SIZE
+		//Integer.SIZE
 
 	}
 
