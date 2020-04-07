@@ -31,7 +31,7 @@ public class TestSingleton {
 		Executors.newCachedThreadPool();
 		
 		
-		//Integer.SIZE
+		Integer.SIZE
 
 	}
 
