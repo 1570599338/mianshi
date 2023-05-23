@@ -29,9 +29,14 @@ public class HashMapTest {
         list.add(1);
 
 
+        Map cm = new ConcurrentHashMap<>();
+        cm.put("","");
+
+        int i = Integer.highestOneBit(15 << 1);
+        System.out.println("******************"+i);
 
 
-
+        List ls = new ArrayList<>();
 
 
     }
